@@ -32,7 +32,7 @@
    #   include <Ws2tcpip.h>
    extern "C" {
    WINSOCK_API_LINKAGE  INT WSAAPI inet_pton( INT Family, PCSTR pszAddrString, PVOID pAddrBuf);
-   WINSOCK_API_LINKAGE  PCSTR WSAAPI inet_ntop(INT  Family, PVOID pAddr, PSTR pStringBuf, size_t StringBufSize);
+   WINSOCK_API_LINKAGE  LPCSTR WSAAPI inet_ntop(INT  Family, LPCVOID pAddr, PSTR pStringBuf, size_t StringBufSize);
    }
 
  #else
